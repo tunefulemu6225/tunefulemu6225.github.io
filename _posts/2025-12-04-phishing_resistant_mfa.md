@@ -3,14 +3,15 @@ title: EvilNginx X Phishing Resistant MFA
 date: 2025-12-04 17:03:00 +0100
 categories: [intune, conditional_access]
 tags: [intune, mfa, conditional_access, "365", azure, microsoft]     # TAG names should always be lowercase
-author: <mith>  
+author: mith  
 description: How to enable phishing resistant mfa, and example of why it works
 toc: true
 ---
 
-# Evilnginx Test
+## Context
+In the cyber security world its a constant battle against mitigating the ever changing new attacks that submerge every day. This attack, a common AITM 
 
-## Links:
+### Links:
 [How to set up Evilginx to phish Office 365 credentials - JanBakker.tech](https://janbakker.tech/how-to-set-up-evilginx-to-phish-office-365-credentials/#:~:text=In%20the%20next%20step%2C%20we,com)
 
 [GitHub - kgretzky/evilginx2: Standalone man-in-the-middle attack framework used for phishing login credentials along with session cookies, allowing for the bypass of 2-factor authentication](https://github.com/kgretzky/evilginx2)
