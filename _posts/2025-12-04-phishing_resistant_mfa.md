@@ -104,6 +104,7 @@ Navigate to:
 
 ## Defend 2 - auth strenght - phishing resistant mfa
 Example with Windows Hello For Business: [WHfB](https://labify.dk/posts/windows_hello/)
+
 Example with certificate based authentication: [Certificate based authentication](https://labify.dk/posts/certificate_authentication/)
 
 My test proves that AItM attacks could be mitigated or at least more difficult with phishing resistant MFA.  
