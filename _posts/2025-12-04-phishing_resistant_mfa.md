@@ -95,19 +95,16 @@ Click 'Import' (lower left corner) -> paste json -> import -> refresh site
 Tadaa you hacked yourself
 
 ## Defend 1 - mfa?
-
-1. go to intune.microsoft.com -> Devices -> Manage devices | Conditional access
-	1. Multifactor authentication for all users created by Microsoft
+Navigate to: 
+1. intune.microsoft.com / Devices / Conditional access
+	1.1. Multifactor authentication for all users created by Microsoft
 
 **Conclusion:** 
 	No effect at all
 
 ## Defend 2 - auth strenght - phishing resistant mfa
-1. phishing resistant mfa
-	1. proves difficult to set up with VM's 
-	2. With physical PC
-		1. New Endpoint security rule sat: 
-				1. account protection
-Conclusion:
-	works! 
+Example with Windows Hello For Business: [WHfB](https://labify.dk/posts/windows_hello/)
+Example with certificate based authentication: [Certificate based authentication](https://labify.dk/posts/certificate_authentication/)
+
+My test proves that AItM attacks could be mitigated or at least more difficult with phishing resistant MFA.  
 		
