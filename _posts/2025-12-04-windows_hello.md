@@ -32,7 +32,7 @@ Another added benefit is that the user does not need other mfa devices, since ev
 This is to ensure that new enrolled devices have Windows hello enabled. 
 
 1. intune.microsoft.com
-2. Devices | Enrollment
+2. Devices / Enrollment
 3. Windows Hello For Business
     3.1. Use the same setting as above
 
@@ -41,7 +41,7 @@ This is to ensure that new enrolled devices have Windows hello enabled.
 Before rolling out to all users in the organization it is importent to test the setting. 
 
 1. intune.microsoft.com
-2. Devices | Manage Devices | Conditional Access
+2. Devices / Manage Devices / Conditional Access
 3. Policies 
 4. New policy
     4.1. Give it a descriptive namee eg.: Contoso - Grant - Require - Phishing resistant MFA
