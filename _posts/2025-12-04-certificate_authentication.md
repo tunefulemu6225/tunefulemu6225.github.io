@@ -77,6 +77,17 @@ Create root and issuer cert
 4.1 Configure to your liking
 4.2 Strength can be single or multifactor do some tinkering with Affinity binding. I had some issues with this. 
 
+### Start smallstep 
+With the command: 
+
+``` 
+step-ca /etc/step/config.json
+```
+
+Step will now run. This is verified since the command does not run in background. You should see somthing like serving something on endpoint - cant remember the output
+
+This can be created as a service. But be sure to know the password for the issuer cert. This will be needed to be stored in a file for this is run as a service . 
+
 ## Test
 
 ```
