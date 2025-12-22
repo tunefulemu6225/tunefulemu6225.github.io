@@ -37,16 +37,15 @@ apt-get update && apt-get -y install step-cli
 
 The port can be changed in <step path>/config/ca.json
 
-3. Basic Crypto Operations
-Create root and issuer cert
+4. Basic Crypto Operations Create root and issuer cert
 
 ### 365 setup 
 1. log into entra.microsoft.com
-1.1 Create an application
-1.2 set the redirect to http://127.0.0.1
-1.3 copy client id
+2. Create an application
+3. set the redirect to http://127.0.0.1
+4. copy client id
 
-2. edit ca.json: 
+5. edit ca.json: 
 ```
 "authority": {
       "disableIssuedAtCheck": true,
@@ -67,13 +66,13 @@ Create root and issuer cert
       },
 ```
 
-3. upload certificates: 
-3.1 navigate to entra.microsoft.com home > Certificate authorities > security | Puplic key infrastructure
-3.2 create new PKI and upload intermediate cert (possibly also root?)
+6. upload certificates: 
+7. navigate to entra.microsoft.com home > Certificate authorities > security | Puplic key infrastructure
+8. create new PKI and upload intermediate cert (possibly also root?)
 
-4. Authentication methods
-4.1 Configure to your liking
-4.2 Strength can be single or multifactor do some tinkering with Affinity binding. I had some issues with this. 
+9. Authentication methods
+10. Configure to your liking
+11. Strength can be single or multifactor do some tinkering with Affinity binding. I had some issues with this. 
 
 ### Start smallstep 
 With the command: 
