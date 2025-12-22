@@ -30,7 +30,7 @@ apt-get update && apt-get -y install step-cli
 {
   "ca-url": "https://ca.internal:<chosen port>",
   "fingerprint": "<fingerprint>",
-  "root": "/Users/carl/.step/certs/root_ca.crt",
+  "root": "<root ca path>",
   "redirect-url": ""
 }
 ```
