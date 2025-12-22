@@ -23,7 +23,7 @@ Seeing that more and more sophisticated phinshing are taking place. The goal if 
         echo 'deb [signed-by=/etc/apt/trusted.gpg.d/smallstep.asc] https://packages.smallstep.com/stable/debian debs main' \
         | tee /etc/apt/sources.list.d/smallstep.list
     apt-get update && apt-get -y install step-cli
-```
+    ```
 
 3. Edit the configuration file found in <step path>/config/defaults.json. For me that is /etc/step/config/defaults.json. The port can be changed in <step path>/config/ca.json
 
@@ -68,7 +68,7 @@ Seeing that more and more sophisticated phinshing are taking place. The goal if 
 ```
 
 6. upload certificates: 
-7. navigate to entra.microsoft.com home > Certificate authorities > security | Puplic key infrastructure
+7. navigate to entra.microsoft.com home > Certificate authorities > security / Puplic key infrastructure
 8. create new PKI and upload intermediate cert (possibly also root?)
 
 9. Authentication methods
