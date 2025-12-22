@@ -17,26 +17,26 @@ Seeing that more and more sophisticated phinshing are taking place. The goal if 
 
 2. Debian/ubuntu: 
 
-```
-apt-get update && apt-get install -y --no-install-recommends curl vim gpg ca-certificates
-curl -fsSL https://packages.smallstep.com/keys/apt/repo-signing-key.gpg -o /etc/apt/trusted.gpg.d/smallstep.asc && \
-    echo 'deb [signed-by=/etc/apt/trusted.gpg.d/smallstep.asc] https://packages.smallstep.com/stable/debian debs main' \
-    | tee /etc/apt/sources.list.d/smallstep.list
-apt-get update && apt-get -y install step-cli
-```
-
-3. Edit the configuration file found in <step path>/config/defaults.json. For me that is /etc/step/config/defaults.json
-
-```
-{
-  "ca-url": "https://ca.internal:<chosen port>",
-  "fingerprint": "<fingerprint>",
-  "root": "<root ca path>",
-  "redirect-url": ""
-}
+    ```
+    apt-get update && apt-get install -y --no-install-recommends curl vim gpg ca-certificates
+    curl -fsSL https://packages.smallstep.com/keys/apt/repo-signing-key.gpg -o /etc/apt/trusted.gpg.d/smallstep.asc && \
+        echo 'deb [signed-by=/etc/apt/trusted.gpg.d/smallstep.asc] https://packages.smallstep.com/stable/debian debs main' \
+        | tee /etc/apt/sources.list.d/smallstep.list
+    apt-get update && apt-get -y install step-cli
 ```
 
-The port can be changed in <step path>/config/ca.json
+3. Edit the configuration file found in <step path>/config/defaults.json. For me that is /etc/step/config/defaults.json. The port can be changed in <step path>/config/ca.json
+
+
+    ```
+    {
+    "ca-url": "https://ca.internal:<chosen port>",
+    "fingerprint": "<fingerprint>",
+    "root": "<root ca path>",
+    "redirect-url": ""
+    }
+    ```
+
 
 4. Basic Crypto Operations Create root and issuer cert
 
