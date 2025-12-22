@@ -13,10 +13,9 @@ Seeing that more and more sophisticated phinshing are taking place. The goal if 
 
 ## Setup 
 
-1. install according to guide: 
-[smallstep](https://smallstep.com/docs/step-cli/installation/#debianubuntu)
+1. Install according to guide: [smallstep](https://smallstep.com/docs/step-cli/installation/#debianubuntu)
 
-1.1 Debian/ubuntu: 
+2. Debian/ubuntu: 
 
 ```
 apt-get update && apt-get install -y --no-install-recommends curl vim gpg ca-certificates
@@ -26,12 +25,11 @@ curl -fsSL https://packages.smallstep.com/keys/apt/repo-signing-key.gpg -o /etc/
 apt-get update && apt-get -y install step-cli
 ```
 
-2. Configuration file
-2.2. Edit <step path>/config/defaults.json. For me that is /etc/step/config/defaults.json
+3. Edit the configuration file found in <step path>/config/defaults.json. For me that is /etc/step/config/defaults.json
 ```
 {
   "ca-url": "https://ca.internal:<chosen port>",
-  "fingerprint": "93cff06dc36251fb0c4985d0b5ed7265a368cd70697fba90355c93cc4aabff0d",
+  "fingerprint": "<fingerprint>",
   "root": "/Users/carl/.step/certs/root_ca.crt",
   "redirect-url": ""
 }
