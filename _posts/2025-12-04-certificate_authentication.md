@@ -26,6 +26,7 @@ apt-get update && apt-get -y install step-cli
 ```
 
 3. Edit the configuration file found in <step path>/config/defaults.json. For me that is /etc/step/config/defaults.json
+
 ```
 {
   "ca-url": "https://ca.internal:<chosen port>",
